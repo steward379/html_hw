@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <article>
+        <form action="#" method="post">
+            <fieldset>
+            <!-- name -->
+                <label for="fullName">姓名（必填）:</label>
+                <input tabindex="1" type="text"  name="fullName" placeholder="Your name" maxlength="10" id="fullName" required /><br/>
+                <!-- 學院 -->
+                <label for="department">學院（必填）：</label>
+                <select tabindex="2" name="department" multiple size="3" id="department" required />
+                <option value="外語">外國語文學院</option>
+                <option value="文">文學院</option>
+                <option value="理">理學院</option>
+                <option value="商">商學院</option>
+                <option value="社科">社會科學學院</option>
+                <option value="傳播">傳播學院</option>
+                <option value="教育">教育學院</option>
+                <option value="國際">國際事務學院</option>
+                <option value="法">法學院</option>
+                </select><br/>
+                <!-- 如果是 chrome -->
+                <label for="department-2">如果是 chrome 可下拉，學院（必填）：</label>
+                 <input type="text" placeholder="choose ur major" id ="department-2" list="lst" />
+                <datalist id="lst">
+                <option value="外國語文學院">
+                <option value="文學院">
+                <option value="理學院">
+                <option value="商學院">
+                <option value="社會科學學院">
+                <option value="傳播學院">
+                <option value="教育學院">
+                <option value="國際事務學院">
+                <option value="法學院">
+                </datalist><br/>
+
+                <!-- 手機 -->
+                <label for="fone">手機（必填）：</label>
+                <input tabindex="3" type="text" name="fone" placeholder="Your phone number" maxlength="10" pattern="[0-9]{10}" id="phone" required /><br/>
+                <!-- 信箱 -->
+                <label for="email">Email（必填）：</label>
+                <input tabindex="4" type="email" name="email" placeholder="Your email" id="email"required /><br/>
+                <!-- 生日 -->
+                <label for="birthday">生日（非必填），如果是 chrome 可下拉：</label>
+                <input tabindex="5" type="date" name="birthday" value = "2016-02-25"id="birthday"  /><br/><br/><br/>
+                <!-- 送出 -->
+                <input type="submit" value="submit" id="submit" /><br/>
+            </fieldset>
+        </form>
+    </article>
+    <footer>
+    </footer>
+</body>
+
+</html>
